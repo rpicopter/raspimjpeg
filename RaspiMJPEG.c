@@ -938,7 +938,7 @@ int main (int argc, char* argv[]) {
  
     }
     if(line) free(line);
-  }
+  } else error("Error opening config file! Have you specified --config option?");
   
   if (verbose) printf("Reading config - DONE\n");
   //
