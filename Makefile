@@ -28,6 +28,7 @@ raspimjpeg: $(OBJ_RASPIMJPEG)
 install:
 	$(INSTALL) -m 0755 -d $(DESTDIR)/usr/local/bin
 	$(INSTALL) -m 755 raspimjpeg $(DESTDIR)/usr/local/bin/
+	$(INSTALL) -m 664 raspimjpeg.config $(DESTDIR)/etc/
 
 clean:
 	rm -rf raspimjpeg
