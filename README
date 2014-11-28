@@ -6,3 +6,14 @@ https://github.com/silvanmelchior/userland/tree/master/host_applications/linux/a
 
 This is the raspimjpeg app only.
 
+Run:
+./raspimjpeg --config [path] [-v]
+
+You will need:
+- fairly new rpi/userland (Oct 2014)
+- might also need to setup FIFO and folders:
+
+mkdir -p /var/www/media
+mkdir -p /dev/shm/mjpeg
+mknod /var/www/FIFO p
+chmod 666 /var/www/FIFO
